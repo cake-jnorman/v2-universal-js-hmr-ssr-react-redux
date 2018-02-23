@@ -1,5 +1,6 @@
 // Libraries
-import React, {Component, PropTypes} from 'react';
+import React, {Component, } from 'react';
+import {PropTypes} from 'prop-types';
 import {connect} from 'react-redux';
 
 // Components
@@ -14,15 +15,6 @@ import {
 
 @connect(mapStateToProps, mapDispatchToProps)
 class CounterContainer extends Component {
-  static propTypes = {
-    // State
-    count: PropTypes.number.isRequired,
-
-    // Dispatchers
-    incrementCount: PropTypes.func.isRequired,
-    decrementCount: PropTypes.func.isRequired
-  }
-
   render () {
     return (<Counter {...this.props} />);
   }
@@ -46,6 +38,15 @@ function mapDispatchToProps(dispatch, props) {
       dispatch(decrementCount());
     }
   };
+}
+
+CounterContainer.propTypes = {
+  // State
+  count: PropTypes.number.isRequired,
+
+  // Dispatchers
+  incrementCount: PropTypes.func.isRequired,
+  decrementCount: PropTypes.func.isRequired
 }
 
 export default CounterContainer;

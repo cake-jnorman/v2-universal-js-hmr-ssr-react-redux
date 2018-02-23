@@ -8,7 +8,7 @@ import {renderToString} from 'react-dom/server';
 
 // Redux
 // import {push} from 'react-router-redux';
-import createStore from 'universal/redux/createStore.js';
+import createStore from '../universal/redux/createStore.js';
 import createHistory from 'history/createMemoryHistory'
 
 // Components

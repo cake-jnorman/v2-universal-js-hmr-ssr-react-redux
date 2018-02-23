@@ -1,12 +1,9 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component, } from 'react';
+import {PropTypes} from 'prop-types';
 
 import styles from './App.css';
 
 class App extends Component {
-  static propTypes = {
-    children: PropTypes.element.isRequired
-  };
-
   render () {
     return (
       <div className={styles.app}>
@@ -15,5 +12,9 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  children: PropTypes.element.isRequired
+};
 
 export default App;
