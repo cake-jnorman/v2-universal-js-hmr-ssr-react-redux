@@ -23,7 +23,8 @@ function renderApp(url, res, store, assets) {
       store={store}
       url={url}
       context={context}
-      assets={assets} />
+      assets={assets}
+      />
   );
 
   res.send('<!DOCTYPE html>'+html);

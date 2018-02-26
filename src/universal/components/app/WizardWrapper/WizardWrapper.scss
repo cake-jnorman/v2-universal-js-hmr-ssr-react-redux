@@ -1,0 +1,23 @@
+@import '../../../styles/globals';
+
+.trainerWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "headerArea" "breadcrumbsArea" "mainArea" "actionPanelArea";
+}
+
+.header {
+  grid-area: headerArea;
+}
+
+.breadcrumbs {
+  grid-area: breadcrumbsArea;
+}
+
+.main {
+  grid-area: mainArea;
+}
+
+.actionPanel {
+  grid-area: actionPanelArea;
+}

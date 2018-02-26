@@ -1,0 +1,9 @@
+@import '../../../styles/globals';
+
+// Styles that are universal to all Headers for Cake
+
+.wrapper {
+  background-color: $white;
+  height: 7.5rem;
+  padding: 0 $indent-minor 0 $indent-major;
+}

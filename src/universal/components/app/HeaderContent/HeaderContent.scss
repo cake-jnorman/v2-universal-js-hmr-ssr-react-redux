@@ -1,0 +1,18 @@
+@import '../../../styles/globals';
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.companyDescription {
+  display: inline-block;
+  font-weight: bold;
+  padding-right: $indent-minor;
+  flex-grow: 1;
+}
+
+.buttonPadding {
+  margin-left: $indent-minor;
+}

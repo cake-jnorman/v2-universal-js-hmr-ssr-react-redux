@@ -1,0 +1,44 @@
+//todo: figure out how to import these from frontify
+//todo: ask for another grey
+
+// ## COLORS ## //
+$charcoal: #3C3C3C;
+$lightCharcoal: #4D4B4A;
+$ash: #777;
+$medGray: #aaa;
+$cakeGreen: #009455;
+$white: #FFFFFF;
+$melon: #EE4266;
+$forest: #005631;
+$ruby: #A81E3B;
+$lightGray: #EBEBEB;
+$lightGreen: #E5F4ED;
+
+
+// ## Spacing ## //
+$indent-major: 7rem;
+$indent-minor: 1.5rem;
+
+
+// ## Standard Elements ##//
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #3c3c3c;
+}
+@media screen and (max-width: 480px){
+h2{
+  font-size: 2rem;
+}
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4{
+  text-transform: uppercase;
+  font-size: .8rem
+}

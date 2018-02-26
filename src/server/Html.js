@@ -16,7 +16,7 @@ class Html extends Component {
       store,
       assets,
       url,
-      context
+      context //todo: possibly a red flag here
     } = this.props;
 
     const {
@@ -43,7 +43,6 @@ class Html extends Component {
        <head>
          <meta charSet="utf-8"/>
          <title>{title}</title>
-
          {PROD && <link rel="stylesheet" href="/static/prerender.css" type="text/css" />}
        </head>
        <body>
@@ -63,7 +62,8 @@ Html.propTypes = {
   url: PropTypes.string.isRequired,
   store: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
-  assets: PropTypes.object
-}
+  assets: PropTypes.object,
+  cssReset: PropTypes.string
+};
 
 export default Html;

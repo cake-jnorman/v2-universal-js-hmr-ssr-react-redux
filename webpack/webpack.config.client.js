@@ -87,7 +87,7 @@ export default {
      },
 
      // CSS
-     {test: /\.css|less$/,
+     {test: /\.css|scss$/,
       include: clientInclude,
       loaders: ExtractTextPlugin.extract({
         fallback: 'style-loader',

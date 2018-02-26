@@ -27,10 +27,6 @@ function asyncRoute(getComponent) {
   }
 }
 
-export const Home = asyncRoute(() => {
-  return System.import('../components/Home/Home.js');
-});
-
-export const Counter = asyncRoute(() => {
-  return System.import('../modules/counter/containers/Counter/CounterContainer.js');
+export const Wizard = asyncRoute(() => {
+  return System.import('../components/app/Wizard/Wizard.js');
 });

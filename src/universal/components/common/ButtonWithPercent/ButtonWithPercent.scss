@@ -1,0 +1,10 @@
+@import '../../../styles/globals';
+
+.percent {
+  margin: .5rem 0;
+}
+
+.children {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

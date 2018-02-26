@@ -1,0 +1,60 @@
+@import '../../../styles/globals';
+@import '../Button/Button';
+// primary button type is the default for the time being
+
+// Primary Button Styles
+.radioButton {
+  @extend .button;
+  input {
+    visibility: hidden;
+    position: absolute;
+  }
+  &.active {
+    @extend .button:active;
+  }
+}
+
+// Secondary Button Styles
+.secondary {
+  @extend .secondary;
+
+  &.active {
+    @extend .secondary:active;
+  }
+}
+
+// Tertiary Button Styles
+.tertiary {
+  @extend .tertiary;
+
+  &.active {
+    @extend .tertiary:active;
+  }
+}
+
+// CTA Button Styles
+.cta {
+  @extend .cta;
+
+  &.active {
+    @extend .cta:active;
+  }
+}
+
+// CTA Button Styles
+.ctaOverColor {
+  @extend .ctaOverColor;
+
+  &.active {
+    @extend .ctaOverColor:active;
+  }
+}
+
+// Drop Down List Button Styles
+.list {
+  @extend .list;
+
+  &.active {
+    @extend .list:active;
+  }
+}

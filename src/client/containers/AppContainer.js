@@ -4,7 +4,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import {Route} from 'react-router';
 
 // Redux
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 
 // Components
 import Routes from 'universal/routes/Routes.js';
@@ -27,6 +27,6 @@ class AppContainer extends Component {
 
 AppContainer.propTypes = {
   history: PropTypes.object.isRequired
-}
+};
 
 export default AppContainer;

@@ -1,20 +1,20 @@
 import React, {Component, } from 'react';
 import {PropTypes} from 'prop-types';
 
-import styles from './App.css';
+import classNames from './AppRoot.scss';
 
-class App extends Component {
+class AppRoot extends Component {
   render () {
     return (
-      <div className={styles.app}>
+      <div className={classNames.app}>
         {this.props.children}
       </div>
     );
   }
 }
 
-App.propTypes = {
+AppRoot.propTypes = {
   children: PropTypes.element.isRequired
 };
 
-export default App;
+export default AppRoot;

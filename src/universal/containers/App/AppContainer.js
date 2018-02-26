@@ -1,11 +1,11 @@
 import React, {Component, } from 'react';
 import {PropTypes} from 'prop-types';
-import App from 'universal/components/App/App';
+import AppRoot from 'universal/components/app/AppRoot/AppRoot';
 
 class AppContainer extends Component {
   render () {
     return (
-      <App {...this.props}/>
+      <AppRoot {...this.props}/>
     );
   }
 }

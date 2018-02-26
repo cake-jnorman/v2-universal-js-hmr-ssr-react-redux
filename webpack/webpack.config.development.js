@@ -72,18 +72,31 @@ export default {
       },
 
       // CSS
-      {test: /\.css$/,
-       include: clientInclude,
-       use: [
-         {loader: 'style-loader'},
-         {loader: 'css-loader',
-          options: {
-            root: src,
-            modules: true,
-            importLoaders: 1,
-            localIdentName: '[name]_[local]_[hash:base64:5]'
-          }}
-       ]
+      {test: /(\.css|\.scss|\.sass)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              modules: true
+            }
+          }, {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [
+                require('autoprefixer')
+              ],
+              sourceMap: true
+            }
+          }, {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [path.resolve(__dirname, 'src', 'scss')],
+              sourceMap: true
+            }
+          }
+        ]
       }
     ]
   }

@@ -1,0 +1,8 @@
+@import '../../../styles/globals';
+
+.bottomButtonWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: $indent-minor $indent-minor $indent-minor $indent-major;
+  border-top: 1px solid $charcoal;
+}

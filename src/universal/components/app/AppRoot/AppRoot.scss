@@ -1,0 +1,8 @@
+@import '../../../styles/globals';
+
+// todo: figure out why anti-aliasing on font looks like poop
+
+.app {
+    color: $charcoal;
+    font-family: Nunito,sans-serif;
+}

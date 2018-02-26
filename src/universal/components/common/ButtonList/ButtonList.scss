@@ -1,0 +1,10 @@
+.listWrapper {
+  & > * {
+    display: block;
+    width: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-top: .5rem;
+  }
+}

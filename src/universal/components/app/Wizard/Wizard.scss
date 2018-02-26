@@ -1,0 +1,13 @@
+@import '../../../styles/globals';
+
+.wizardWrapper {
+  background-color: $white;
+  display: flex;
+  height: 30rem;
+  justify-content: center;
+  padding: $indent-minor $indent-minor $indent-minor $indent-major;
+}
+
+.wizardSection {
+  padding: 0 $indent-minor;
+}

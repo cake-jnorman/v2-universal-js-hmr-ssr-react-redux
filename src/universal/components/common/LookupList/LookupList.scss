@@ -1,0 +1,45 @@
+@import '../../../styles/globals';
+
+.wrapper {
+  position: relative;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid $charcoal;
+  color: $charcoal;
+  font-size: 1rem;
+  margin-top: .5rem;
+  min-height: 3rem;
+  min-width: 25.4rem;
+  outline: none;
+  padding: 0 1.5rem;
+}
+
+.open {
+  position: absolute;
+  top: 1.2rem;
+  right: .5rem;
+  cursor: pointer;
+}
+
+.responseList {
+  display: none;
+  grid-template-columns: 1fr;
+  max-height: 20rem;
+  overflow-y: scroll;
+  padding-left: .2rem;
+
+  & > * {
+    margin-top: 2px;
+  }
+
+  &.active {
+    display: grid;
+  }
+}
+
+.children {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
