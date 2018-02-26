@@ -30,7 +30,8 @@ export default {
       'babel-polyfill/dist/polyfill.js',
       'react-hot-loader/patch',
       'webpack-hot-middleware/client?noInfo=false',
-      './client/client.js'
+      './client/client.js',
+      './universal/styles/reset.scss' // todo: make sure this makes it into the production build process
     ]
   },
   output: {
